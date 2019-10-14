@@ -1,0 +1,29 @@
+{
+  "name": "gridlib",
+  "version": "1.0.0",
+  "description": "JavaScript funtions to help with grid functionalities",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "ava",
+    "build": "tsc --outfile index.js --outDir dist grid.ts"
+  },
+  "ava": {
+    "compileEnhancements": false,
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "esm",
+      "ts-node/register",
+      "tsconfig-paths/register"
+    ]
+  },
+  "author": "Maximilian Ehlers <max@ehlers.berlin>",
+  "devDependencies": {
+    "ava": "2.4.0",
+    "esm": "3.2.25",
+    "ts-node": "8.4.1",
+    "tsconfig-paths": "3.9.0",
+    "typescript": "3.6.4"
+  }
+}
